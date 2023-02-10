@@ -127,4 +127,16 @@ Subsystem startup information is stored in `HKLM\SYSTEM\CurrentcontrolSet\Contro
 
 The Windows subsystem deals with displaying I/O. Naturally, other components of the OS depend on it. Therefore it is a critical process indicating that without it the system will crash
 
-The major components of the Windows subsystem include:
+Here are some major responsibilities of the Windows subsystem:
+
+* For each session, an instance of the environment subsystem process (Csrss.exe) loads four DLLs (Basesrv.dll, Winsrv.dll, Sxssrv.dll, and Csrsv.dll) to support the following operations:
+  * creating and deleting threads
+  * shutting down windows applications
+  * containing .ini file to registry location mappings for backward compatibility
+  * sending kernel notifications
+  * caching functions
+* a kernel-mode device driver (win32k.sys) that contains the following:
+  * windows manager which controls window displays and screen output
+* the console host process (conhost.exe) manages command prompt windows
+
+#### Windows 10 and win32k.sys
