@@ -142,3 +142,7 @@ Here are some major responsibilities of the Windows subsystem:
 #### Win32k.sys
 
 * on a full desktop system Win32k.sys loads win32kbase.sys and win32kfull.sys
+
+#### Ntdll.dll
+
+Special DLL used for subsystem DLLs and native applicaions
