@@ -139,4 +139,6 @@ Here are some major responsibilities of the Windows subsystem:
   * windows manager which controls window displays and screen output
 * the console host process (conhost.exe) manages command prompt windows
 
-#### Windows 10 and win32k.sys
+#### Win32k.sys
+
+* on a full desktop system Win32k.sys loads win32kbase.sys and win32kfull.sys
