@@ -110,9 +110,7 @@ Core Windows system files
 The role of an environment subsystem is to expose some subset of the base Windows executive system services to application programs. Examples of environment subsystems include:
 
 - console-based applications
-
 - graphical user interface (GUI) applications
-
 - 16-bit Windows applications.
 
 When an application calls a function in a subsystem DLL, one of three things can occur:
@@ -126,3 +124,7 @@ When an application calls a function in a subsystem DLL, one of three things can
 Subsystem startup information is stored in `HKLM\SYSTEM\CurrentcontrolSet\Control\SessionManager\Subsystems`
 
 #### Windows subsystem
+
+The Windows subsystem deals with displaying I/O. Naturally, other components of the OS depend on it. Therefore it is a critical process indicating that without it the system will crash
+
+The major components of the Windows subsystem include:
